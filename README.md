@@ -1,16 +1,21 @@
-<h1>JWipe - Disk Sanitization</h1>
+<h1>Applying Filters SQL Queries</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
-<br />
+
+My organization is working to make their system more secure. It is my job to ensure the system is safe, investigate all potential security issues, and update employee computers as needed. The following steps provide examples of how I used SQL with filters to perform security-related tasks.
+
+<b>Scenario</b>
+
+As a security professional at a large organization. Part of the job is to investigate security issues to help keep the system secure. I recently discovered some potential security issues that involve login attempts and employee machines.
+My task is to examine the organization’s data in their employees and log_in_attempts tables. I'll need to use SQL filters to retrieve records from different datasets and investigate the potential security issues.<br />
+
+<b>Retrieve after hours failed login attempts</b>
+
+There was a potential security incident that occurred after business hours (after 18:00). All after-hours login attempts that failed need to be investigated.
+The following code demonstrates how I created a SQL query to filter for failed login attempts that occurred after business hours.
 
 
-<h2>Languages and Utilities Used</h2>
-
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
 
 <h2>Environments Used </h2>
 
